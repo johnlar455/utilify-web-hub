@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
@@ -51,7 +50,7 @@ const categories: ToolCategory[] = [
         title: 'Text Case Converter',
         description: 'Convert text between cases (upper, lower, title, etc.)',
         path: '/tools/text/text-case-converter',
-        implemented: false,
+        implemented: true,
       },
     ],
   },
@@ -99,7 +98,7 @@ const categories: ToolCategory[] = [
         title: 'Percentage Calculator',
         description: 'Calculate percentages easily',
         path: '/tools/calculators/percentage-calculator',
-        implemented: false,
+        implemented: true,
       },
     ],
   },
@@ -123,7 +122,7 @@ const categories: ToolCategory[] = [
         title: 'Color Converter',
         description: 'Convert between color formats (HEX, RGB, HSL)',
         path: '/tools/converters/color-converter',
-        implemented: false,
+        implemented: true,
       },
     ],
   },

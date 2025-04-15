@@ -12,6 +12,9 @@ import ImageResizer from "./pages/tools/image/ImageResizer";
 import AgeCalculator from "./pages/tools/calculators/AgeCalculator";
 import JsonFormatter from "./pages/tools/dev/JsonFormatter";
 import Base64Converter from "./pages/tools/binary/Base64Converter";
+import TextCaseConverter from "./pages/tools/text/TextCaseConverter";
+import PercentageCalculator from "./pages/tools/calculators/PercentageCalculator";
+import ColorConverter from "./pages/tools/converters/ColorConverter";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +31,9 @@ const App = () => (
           <Route path="/tools/calculators/age-calculator" element={<Layout><AgeCalculator /></Layout>} />
           <Route path="/tools/dev/json-formatter" element={<Layout><JsonFormatter /></Layout>} />
           <Route path="/tools/binary/base64-converter" element={<Layout><Base64Converter /></Layout>} />
+          <Route path="/tools/text/text-case-converter" element={<Layout><TextCaseConverter /></Layout>} />
+          <Route path="/tools/calculators/percentage-calculator" element={<Layout><PercentageCalculator /></Layout>} />
+          <Route path="/tools/converters/color-converter" element={<Layout><ColorConverter /></Layout>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
