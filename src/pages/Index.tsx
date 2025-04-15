@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
@@ -52,6 +53,34 @@ const categories: ToolCategory[] = [
         path: '/tools/text/text-case-converter',
         implemented: true,
       },
+      {
+        id: 'text-to-slug',
+        title: 'Text to Slug',
+        description: 'Convert text to URL-friendly slugs',
+        path: '/tools/text/text-to-slug',
+        implemented: true,
+      },
+      {
+        id: 'lorem-ipsum-generator',
+        title: 'Lorem Ipsum Generator',
+        description: 'Generate placeholder text for designs',
+        path: '/tools/text/lorem-ipsum-generator',
+        implemented: true,
+      },
+      {
+        id: 'remove-line-breaks',
+        title: 'Remove Line Breaks',
+        description: 'Remove or add line breaks in text',
+        path: '/tools/text/remove-line-breaks',
+        implemented: true,
+      },
+      {
+        id: 'random-word-generator',
+        title: 'Random Word Generator',
+        description: 'Generate random words for creative writing',
+        path: '/tools/text/random-word-generator',
+        implemented: true,
+      },
     ],
   },
   {
@@ -74,6 +103,13 @@ const categories: ToolCategory[] = [
         title: 'Image to Base64',
         description: 'Convert images to base64 encoded strings',
         path: '/tools/image/image-to-base64',
+        implemented: true,
+      },
+      {
+        id: 'base64-to-image',
+        title: 'Base64 to Image',
+        description: 'Convert base64 strings back to images',
+        path: '/tools/image/base64-to-image',
         implemented: true,
       },
     ],
@@ -100,6 +136,13 @@ const categories: ToolCategory[] = [
         path: '/tools/calculators/percentage-calculator',
         implemented: true,
       },
+      {
+        id: 'average-calculator',
+        title: 'Average Calculator',
+        description: 'Calculate mean, median, mode and other statistics',
+        path: '/tools/calculators/average-calculator',
+        implemented: true,
+      },
     ],
   },
   {
@@ -110,6 +153,13 @@ const categories: ToolCategory[] = [
     color: 'converterTool',
     gradient: 'converterTool-gradient',
     tools: [
+      {
+        id: 'length-converter',
+        title: 'Length Converter',
+        description: 'Convert between different units of length',
+        path: '/tools/converters/length-converter',
+        implemented: true,
+      },
       {
         id: 'unit-converter',
         title: 'Unit Converter',
