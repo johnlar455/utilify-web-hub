@@ -86,9 +86,7 @@ const PasswordGenerator: React.FC = () => {
     return { score, label: 'Weak', color: 'bg-red-500' };
   };
 
-  const strength = calculate
-
-Strength();
+  const strength = calculateStrength();
 
   return (
     <ToolLayout
