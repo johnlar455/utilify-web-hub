@@ -15,8 +15,6 @@ import {
   Wind, 
   Zap, 
   Battery, 
-  Lightbulb, 
-  Radio, 
   RotateCcw,
   DollarSign
 } from 'lucide-react';
@@ -45,7 +43,7 @@ const converterTypes: ConverterType[] = [
     description: 'Convert between different units of area (square meters, acres, etc.)',
     icon: Square,
     path: '/tools/converters/area-converter',
-    implemented: false,
+    implemented: true,
   },
   {
     id: 'weight',
@@ -53,7 +51,7 @@ const converterTypes: ConverterType[] = [
     description: 'Convert between different units of weight (kilograms, pounds, etc.)',
     icon: Weight,
     path: '/tools/converters/weight-converter',
-    implemented: false,
+    implemented: true,
   },
   {
     id: 'volume',
@@ -61,7 +59,7 @@ const converterTypes: ConverterType[] = [
     description: 'Convert between different units of volume (liters, gallons, etc.)',
     icon: Beaker,
     path: '/tools/converters/volume-converter',
-    implemented: false,
+    implemented: true,
   },
   {
     id: 'temperature',
@@ -69,7 +67,7 @@ const converterTypes: ConverterType[] = [
     description: 'Convert between different temperature units (Celsius, Fahrenheit, etc.)',
     icon: Thermometer,
     path: '/tools/converters/temperature-converter',
-    implemented: false,
+    implemented: true,
   },
   {
     id: 'time',
@@ -77,7 +75,7 @@ const converterTypes: ConverterType[] = [
     description: 'Convert between different units of time (seconds, hours, days, etc.)',
     icon: Clock,
     path: '/tools/converters/time-converter',
-    implemented: false,
+    implemented: true,
   },
   {
     id: 'digital',
@@ -85,7 +83,7 @@ const converterTypes: ConverterType[] = [
     description: 'Convert between different digital units (bytes, kilobytes, etc.)',
     icon: HardDrive,
     path: '/tools/converters/digital-converter',
-    implemented: false,
+    implemented: true,
   },
   {
     id: 'speed',
@@ -93,7 +91,7 @@ const converterTypes: ConverterType[] = [
     description: 'Convert between different units of speed (mph, km/h, etc.)',
     icon: Gauge,
     path: '/tools/converters/speed-converter',
-    implemented: false,
+    implemented: true,
   },
   {
     id: 'pressure',
@@ -101,7 +99,7 @@ const converterTypes: ConverterType[] = [
     description: 'Convert between different pressure units (pascal, bar, psi, etc.)',
     icon: Wind,
     path: '/tools/converters/pressure-converter',
-    implemented: false,
+    implemented: true,
   },
   {
     id: 'power',
@@ -109,7 +107,7 @@ const converterTypes: ConverterType[] = [
     description: 'Convert between different power units (watts, horsepower, etc.)',
     icon: Zap,
     path: '/tools/converters/power-converter',
-    implemented: false,
+    implemented: true,
   },
   {
     id: 'energy',
@@ -117,7 +115,7 @@ const converterTypes: ConverterType[] = [
     description: 'Convert between different energy units (joules, calories, etc.)',
     icon: Battery,
     path: '/tools/converters/energy-converter',
-    implemented: false,
+    implemented: true,
   },
   {
     id: 'angle',
@@ -125,7 +123,7 @@ const converterTypes: ConverterType[] = [
     description: 'Convert between different angle units (degrees, radians, etc.)',
     icon: RotateCcw,
     path: '/tools/converters/angle-converter',
-    implemented: false,
+    implemented: true,
   },
   {
     id: 'currency',
@@ -133,7 +131,7 @@ const converterTypes: ConverterType[] = [
     description: 'Convert between different currencies (USD, EUR, etc.)',
     icon: DollarSign,
     path: '/tools/converters/currency-converter',
-    implemented: false,
+    implemented: true,
   },
 ];
 

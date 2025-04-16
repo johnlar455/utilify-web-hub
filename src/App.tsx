@@ -30,6 +30,18 @@ import CssMinifier from "./pages/tools/website/CssMinifier";
 import RegexTester from "./pages/tools/dev/RegexTester";
 import PasswordGenerator from "./pages/tools/misc/PasswordGenerator";
 import UuidGenerator from "./pages/tools/misc/UuidGenerator";
+import AreaConverter from "./pages/tools/converters/AreaConverter";
+import WeightConverter from "./pages/tools/converters/WeightConverter";
+import VolumeConverter from "./pages/tools/converters/VolumeConverter";
+import TemperatureConverter from "./pages/tools/converters/TemperatureConverter";
+import TimeConverter from "./pages/tools/converters/TimeConverter";
+import DigitalConverter from "./pages/tools/converters/DigitalConverter";
+import SpeedConverter from "./pages/tools/converters/SpeedConverter";
+import PressureConverter from "./pages/tools/converters/PressureConverter";
+import PowerConverter from "./pages/tools/converters/PowerConverter";
+import EnergyConverter from "./pages/tools/converters/EnergyConverter";
+import AngleConverter from "./pages/tools/converters/AngleConverter";
+import CurrencyConverter from "./pages/tools/converters/CurrencyConverter";
 
 const queryClient = new QueryClient();
 
@@ -61,9 +73,21 @@ const App = () => (
           <Route path="/tools/calculators/average-calculator" element={<Layout><AverageCalculator /></Layout>} />
           
           {/* Converter Tools */}
+          <Route path="/tools/converters/unit-converter" element={<Layout><UnitConverter /></Layout>} />
           <Route path="/tools/converters/color-converter" element={<Layout><ColorConverter /></Layout>} />
           <Route path="/tools/converters/length-converter" element={<Layout><LengthConverter /></Layout>} />
-          <Route path="/tools/converters/unit-converter" element={<Layout><UnitConverter /></Layout>} />
+          <Route path="/tools/converters/area-converter" element={<Layout><AreaConverter /></Layout>} />
+          <Route path="/tools/converters/weight-converter" element={<Layout><WeightConverter /></Layout>} />
+          <Route path="/tools/converters/volume-converter" element={<Layout><VolumeConverter /></Layout>} />
+          <Route path="/tools/converters/temperature-converter" element={<Layout><TemperatureConverter /></Layout>} />
+          <Route path="/tools/converters/time-converter" element={<Layout><TimeConverter /></Layout>} />
+          <Route path="/tools/converters/digital-converter" element={<Layout><DigitalConverter /></Layout>} />
+          <Route path="/tools/converters/speed-converter" element={<Layout><SpeedConverter /></Layout>} />
+          <Route path="/tools/converters/pressure-converter" element={<Layout><PressureConverter /></Layout>} />
+          <Route path="/tools/converters/power-converter" element={<Layout><PowerConverter /></Layout>} />
+          <Route path="/tools/converters/energy-converter" element={<Layout><EnergyConverter /></Layout>} />
+          <Route path="/tools/converters/angle-converter" element={<Layout><AngleConverter /></Layout>} />
+          <Route path="/tools/converters/currency-converter" element={<Layout><CurrencyConverter /></Layout>} />
           
           {/* Binary Tools */}
           <Route path="/tools/binary/base64-converter" element={<Layout><Base64Converter /></Layout>} />
