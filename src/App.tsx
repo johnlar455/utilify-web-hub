@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -19,6 +18,19 @@ import Base64ToImage from "./pages/tools/image/Base64ToImage";
 import AgeCalculator from "./pages/tools/calculators/AgeCalculator";
 import PercentageCalculator from "./pages/tools/calculators/PercentageCalculator";
 import AverageCalculator from "./pages/tools/calculators/AverageCalculator";
+import ConfidenceIntervalCalculator from "./pages/tools/calculators/ConfidenceIntervalCalculator";
+import MarginCalculator from "./pages/tools/calculators/MarginCalculator";
+import ProbabilityCalculator from "./pages/tools/calculators/ProbabilityCalculator";
+import PaypalFeeCalculator from "./pages/tools/calculators/PaypalFeeCalculator";
+import CpmCalculator from "./pages/tools/calculators/CpmCalculator";
+import LoanCalculator from "./pages/tools/calculators/LoanCalculator";
+import GstCalculator from "./pages/tools/calculators/GstCalculator";
+import DaysCalculator from "./pages/tools/calculators/DaysCalculator";
+import HoursCalculator from "./pages/tools/calculators/HoursCalculator";
+import MonthCalculator from "./pages/tools/calculators/MonthCalculator";
+import StripeFeeCalculator from "./pages/tools/calculators/StripeFeeCalculator";
+import CalorieCalculator from "./pages/tools/calculators/CalorieCalculator";
+import TdeeCalculator from "./pages/tools/calculators/TdeeCalculator";
 import JsonFormatter from "./pages/tools/dev/JsonFormatter";
 import Base64Converter from "./pages/tools/binary/Base64Converter";
 import HexConverter from "./pages/tools/binary/HexConverter";
@@ -71,6 +83,19 @@ const App = () => (
           <Route path="/tools/calculators/age-calculator" element={<Layout><AgeCalculator /></Layout>} />
           <Route path="/tools/calculators/percentage-calculator" element={<Layout><PercentageCalculator /></Layout>} />
           <Route path="/tools/calculators/average-calculator" element={<Layout><AverageCalculator /></Layout>} />
+          <Route path="/tools/calculators/confidence-interval-calculator" element={<Layout><ConfidenceIntervalCalculator /></Layout>} />
+          <Route path="/tools/calculators/margin-calculator" element={<Layout><MarginCalculator /></Layout>} />
+          <Route path="/tools/calculators/probability-calculator" element={<Layout><ProbabilityCalculator /></Layout>} />
+          <Route path="/tools/calculators/paypal-fee-calculator" element={<Layout><PaypalFeeCalculator /></Layout>} />
+          <Route path="/tools/calculators/cpm-calculator" element={<Layout><CpmCalculator /></Layout>} />
+          <Route path="/tools/calculators/loan-calculator" element={<Layout><LoanCalculator /></Layout>} />
+          <Route path="/tools/calculators/gst-calculator" element={<Layout><GstCalculator /></Layout>} />
+          <Route path="/tools/calculators/days-calculator" element={<Layout><DaysCalculator /></Layout>} />
+          <Route path="/tools/calculators/hours-calculator" element={<Layout><HoursCalculator /></Layout>} />
+          <Route path="/tools/calculators/month-calculator" element={<Layout><MonthCalculator /></Layout>} />
+          <Route path="/tools/calculators/stripe-fee-calculator" element={<Layout><StripeFeeCalculator /></Layout>} />
+          <Route path="/tools/calculators/calorie-calculator" element={<Layout><CalorieCalculator /></Layout>} />
+          <Route path="/tools/calculators/tdee-calculator" element={<Layout><TdeeCalculator /></Layout>} />
           
           {/* Converter Tools */}
           <Route path="/tools/converters/unit-converter" element={<Layout><UnitConverter /></Layout>} />
