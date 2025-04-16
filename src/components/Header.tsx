@@ -8,6 +8,12 @@ const Header: React.FC = () => {
   const location = useLocation();
   const pathSegments = location.pathname.split('/').filter(Boolean);
 
+  // Custom mapping for specific categories to their default pages
+  const categoryDefaultPages: { [key: string]: string } = {
+    'converters': '/tools/converters/unit-converter',
+    // Add more mappings if needed
+  };
+
   return (
     <header className="border-b">
       <div className="container py-4">
@@ -34,12 +40,16 @@ const Header: React.FC = () => {
                   .split('-')
                   .map(word => word.charAt(0).toUpperCase() + word.slice(1))
                   .join(' ');
+
+                // Check if this segment has a default page mapping
+                const defaultPagePath = categoryDefaultPages[segment];
+                const linkPath = defaultPagePath || path;
                 
                 return (
                   <React.Fragment key={path}>
                     <ChevronRight className="h-4 w-4 mx-1" />
                     <Link 
-                      to={path}
+                      to={linkPath}
                       className={cn(
                         "hover:text-foreground transition-colors",
                         index === pathSegments.length - 1 ? "font-medium text-foreground" : ""
