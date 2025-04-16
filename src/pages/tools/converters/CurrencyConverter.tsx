@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import ToolLayout from '@/components/ToolLayout';
 import { Input } from '@/components/ui/input';
@@ -147,7 +146,7 @@ const CurrencyConverter: React.FC = () => {
       }
     >
       <div className="p-6 space-y-6">
-        <Alert variant="warning" className="mb-4">
+        <Alert variant="default" className="mb-4">
           <AlertCircle className="h-4 w-4" />
           <AlertTitle>Static exchange rates</AlertTitle>
           <AlertDescription>
