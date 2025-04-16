@@ -24,6 +24,7 @@ import Base64Converter from "./pages/tools/binary/Base64Converter";
 import HexConverter from "./pages/tools/binary/HexConverter";
 import ColorConverter from "./pages/tools/converters/ColorConverter";
 import LengthConverter from "./pages/tools/converters/LengthConverter";
+import UnitConverter from "./pages/tools/converters/UnitConverter";
 import HtmlMinifier from "./pages/tools/website/HtmlMinifier";
 import CssMinifier from "./pages/tools/website/CssMinifier";
 import RegexTester from "./pages/tools/dev/RegexTester";
@@ -62,6 +63,7 @@ const App = () => (
           {/* Converter Tools */}
           <Route path="/tools/converters/color-converter" element={<Layout><ColorConverter /></Layout>} />
           <Route path="/tools/converters/length-converter" element={<Layout><LengthConverter /></Layout>} />
+          <Route path="/tools/converters/unit-converter" element={<Layout><UnitConverter /></Layout>} />
           
           {/* Binary Tools */}
           <Route path="/tools/binary/base64-converter" element={<Layout><Base64Converter /></Layout>} />

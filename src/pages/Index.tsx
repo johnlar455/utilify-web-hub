@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
@@ -165,7 +164,7 @@ const categories: ToolCategory[] = [
         title: 'Unit Converter',
         description: 'Convert between different measurement units',
         path: '/tools/converters/unit-converter',
-        implemented: false,
+        implemented: true,
       },
       {
         id: 'color-converter',
