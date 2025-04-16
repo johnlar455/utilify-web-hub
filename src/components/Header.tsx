@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   // Custom mapping for specific categories to their default pages
   const categoryDefaultPages: { [key: string]: string } = {
     'converters': '/tools/converters/unit-converter',
-    'calculators': '/tools/calculators/age-calculator',
+    'calculators': '/tools/calculators',
     // Add more mappings if needed
   };
 

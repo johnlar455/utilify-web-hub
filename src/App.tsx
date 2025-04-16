@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -54,6 +55,7 @@ import PowerConverter from "./pages/tools/converters/PowerConverter";
 import EnergyConverter from "./pages/tools/converters/EnergyConverter";
 import AngleConverter from "./pages/tools/converters/AngleConverter";
 import CurrencyConverter from "./pages/tools/converters/CurrencyConverter";
+import CalculatorsIndex from "./pages/tools/calculators";
 
 const queryClient = new QueryClient();
 
@@ -80,6 +82,7 @@ const App = () => (
           <Route path="/tools/image/base64-to-image" element={<Layout><Base64ToImage /></Layout>} />
           
           {/* Calculator Tools */}
+          <Route path="/tools/calculators" element={<Layout><CalculatorsIndex /></Layout>} />
           <Route path="/tools/calculators/age-calculator" element={<Layout><AgeCalculator /></Layout>} />
           <Route path="/tools/calculators/percentage-calculator" element={<Layout><PercentageCalculator /></Layout>} />
           <Route path="/tools/calculators/average-calculator" element={<Layout><AverageCalculator /></Layout>} />

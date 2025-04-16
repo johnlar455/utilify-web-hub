@@ -2,7 +2,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ToolLayout from '@/components/ToolLayout';
-import { Button } from '@/components/ui/button';
 import { 
   Ruler, 
   Square, 
@@ -18,6 +17,7 @@ import {
   RotateCcw,
   DollarSign
 } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
 
 interface ConverterType {
   id: string;
@@ -151,35 +151,41 @@ const UnitConverter: React.FC = () => {
       }
     >
       <div className="p-6 space-y-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {converterTypes.map((converter) => (
-            <div key={converter.id} className="flex flex-col">
+            <div key={converter.id} className="flex flex-col h-full">
               {converter.implemented ? (
                 <Link 
                   to={converter.path}
-                  className="block h-full p-4 rounded-md border hover:bg-muted/50 transition-all"
+                  className="h-full"
                 >
-                  <div className="flex items-center mb-2">
-                    <div className="p-2 rounded-md bg-converterTool/10 text-converterTool mr-3">
-                      <converter.icon className="h-5 w-5" />
-                    </div>
-                    <h3 className="font-medium">{converter.title}</h3>
-                  </div>
-                  <p className="text-sm text-muted-foreground">{converter.description}</p>
+                  <Card className="h-full transition-all hover:shadow-md">
+                    <CardContent className="p-4 h-full flex flex-col">
+                      <div className="flex items-start mb-2 pt-4">
+                        <div className="p-2 rounded-md bg-converterTool/10 text-converterTool mr-3">
+                          <converter.icon className="h-5 w-5" />
+                        </div>
+                        <h3 className="font-medium">{converter.title}</h3>
+                      </div>
+                      <p className="text-sm text-muted-foreground">{converter.description}</p>
+                    </CardContent>
+                  </Card>
                 </Link>
               ) : (
-                <div className="block h-full p-4 rounded-md border bg-muted/30 opacity-60 cursor-not-allowed">
-                  <div className="flex items-center mb-2">
-                    <div className="p-2 rounded-md bg-converterTool/10 text-converterTool mr-3">
-                      <converter.icon className="h-5 w-5" />
+                <Card className="h-full bg-muted/30 opacity-60 cursor-not-allowed">
+                  <CardContent className="p-4 h-full flex flex-col">
+                    <div className="flex items-start mb-2 pt-4">
+                      <div className="p-2 rounded-md bg-converterTool/10 text-converterTool mr-3">
+                        <converter.icon className="h-5 w-5" />
+                      </div>
+                      <div className="flex items-center">
+                        <h3 className="font-medium">{converter.title}</h3>
+                        <span className="ml-2 text-xs bg-muted px-1.5 py-0.5 rounded">Coming soon</span>
+                      </div>
                     </div>
-                    <div className="flex items-center">
-                      <h3 className="font-medium">{converter.title}</h3>
-                      <span className="ml-2 text-xs bg-muted px-1.5 py-0.5 rounded">Coming soon</span>
-                    </div>
-                  </div>
-                  <p className="text-sm text-muted-foreground">{converter.description}</p>
-                </div>
+                    <p className="text-sm text-muted-foreground">{converter.description}</p>
+                  </CardContent>
+                </Card>
               )}
             </div>
           ))}
